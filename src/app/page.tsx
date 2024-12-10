@@ -79,7 +79,7 @@ export default function Home() {
                 name: "Mehmet Aybaş", 
                 company: "HSA Enerji", 
                 role: "Satış ve İş Geliştirme Direktörü", 
-                image: "/speakers/mehmetaybas.png" 
+                image: "/speakers/mehmetaybas.jpeg" 
               },
               { 
                 name: "Aşkın Balaban", 
