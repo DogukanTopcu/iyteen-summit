@@ -16,7 +16,7 @@ export default function Home() {
               { 
                 name: "Arman Alpcan Bilgi", 
                 company: "İYTE Enerji Topluluğu", 
-                role: "Topluluk Temsilcisi", 
+                role: "Yönetim Kurulu Başkan Yardımcısı", 
                 image: "/speakers/alpcanbilgi.png" 
               },
               { 
@@ -76,10 +76,10 @@ export default function Home() {
             title="Güneş Enerjisi" 
             speakers={[
               { 
-                name: "Samet Akar", 
+                name: "Mehmet Aybaş", 
                 company: "HSA Enerji", 
-                role: "Proses Müdürü", 
-                image: "/speakers/sametakar.png" 
+                role: "Satış ve İş Geliştirme Direktörü", 
+                image: "/speakers/mehmetaybas.png" 
               },
               { 
                 name: "Aşkın Balaban", 
@@ -127,8 +127,8 @@ export default function Home() {
             speakers={[
               { 
                 name: "Ayşe Naz Akar", 
-                company: "Topluluk", 
-                role: "Topluluk Temsilcisi", 
+                company: "İYTE Enerji Topluluğu", 
+                role: "Denetim Kurulu Başkan Yardımcısı", 
                 image: "/speakers/aysenazakar.jpg" 
               },
               { 
