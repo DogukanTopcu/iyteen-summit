@@ -14,10 +14,10 @@ export default function Home() {
             title="Açılış Konuşmaları" 
             speakers={[
               { 
-                name: "", 
+                name: "Arman Alpcan Bilgi", 
                 company: "İYTE Enerji Topluluğu", 
                 role: "Topluluk Temsilcisi", 
-                image: "/defaultProfile.jpg" 
+                image: "/speakers/alpcanbilgi.png" 
               },
               { 
                 name: "Prof. Dr. Yusuf Baran", 
@@ -30,12 +30,6 @@ export default function Home() {
                 company: "İZKA", 
                 role: "Yenilik ve Girişimcilik Politikaları Birim Başkanı", 
                 image: "/speakers/sencerozen.png" 
-              },
-              { 
-                name: "Lütfi Kılıç", 
-                company: "İzmir Ticaret Odası", 
-                role: "Temiz Enerji Çalışma Komite Başkanı", 
-                image: "/speakers/lutfikilic.jpg" 
               },
               { 
                 name: "Özkan Mucuk", 
@@ -56,12 +50,6 @@ export default function Home() {
                 image: "/speakers/ozkanmucuk.png" 
               },
               { 
-                name: "Hakan Sağlam", 
-                company: "Çalık Enerji", 
-                role: "Tünel Şefi", 
-                image: "/speakers/hakansaglam.png" 
-              },
-              { 
                 name: "Mustafa Yıldız", 
                 company: "Enercon", 
                 role: "İş Geliştirme Müdürü", 
@@ -71,7 +59,7 @@ export default function Home() {
                 name: "Koray Öden", 
                 company: "ARI-ES Enerji", 
                 role: "Genel Koordinatör", 
-                image: "/placeholder.svg" 
+                image: "/defaultProfile.jpg" 
               },
               { 
                 name: "Ebru Arıcı", 
@@ -97,7 +85,7 @@ export default function Home() {
                 name: "Aşkın Balaban", 
                 company: "ACS Enerji", 
                 role: "Satış ve Pazarlama Müdürü", 
-                image: "/placeholder.svg" 
+                image: "/speakers/askinbalaban.jpg" 
               },
               { 
                 name: "Deniz Garip Yılmaz", 
@@ -112,12 +100,6 @@ export default function Home() {
             time="15.30" 
             title="Enerjide Dijitalleşme ve Yapay Zekanın Yeri" 
             speakers={[
-              { 
-                name: "Mustafa Ozan Tuncan", 
-                company: "LOGGMA", 
-                role: "Kurucu Ortak", 
-                image: "/speakers/mustafaozantuncan.png" 
-              },
               { 
                 name: "Ufuk Yaman", 
                 company: "USENS Energy Solutions", 
@@ -144,22 +126,16 @@ export default function Home() {
             title="Açılış Konuşmaları" 
             speakers={[
               { 
-                name: "", 
+                name: "Ayşe Naz Akar", 
                 company: "Topluluk", 
                 role: "Topluluk Temsilcisi", 
-                image: "/defaultProfile.jpg" 
+                image: "/speakers/aysenazakar.jpg" 
               },
               { 
                 name: "Alper Baba", 
                 company: "İYTE", 
                 role: "Rektör Yardımcısı", 
                 image: "/speakers/alperbaba.png" 
-              },
-              { 
-                name: "Murat Çelik", 
-                company: "EGİAD", 
-                role: "", 
-                image: "/placeholder.svg" 
               }
             ]}
           />
@@ -171,7 +147,7 @@ export default function Home() {
                 name: "Nihat Arı", 
                 company: "Enerjisa Üretim", 
                 role: "Rüzgar ve Güneş Enerjisi İşletme ve Bakım Müdürü", 
-                image: "/placeholder.svg" 
+                image: "/speakers/nihatari.jpg" 
               },
               { 
                 name: "Ahmet Paksoy", 
@@ -200,16 +176,10 @@ export default function Home() {
                 image: "/speakers/ibrahimhoroz.png" 
               },
               { 
-                name: "Yusuf Can Uz", 
-                company: "Filament Technology", 
-                role: "Kurucu Ortak, CEO", 
-                image: "/speakers/yusufcanuz.png" 
-              },
-              { 
-                name: "Serhan Şentürk", 
-                company: "Maximator", 
-                role: "", 
-                image: "/placeholder.svg" 
+                name: "Akgün Çağlar Erdoğan", 
+                company: "KONTEK Enerji", 
+                role: "Enerji Depolama Direktörü", 
+                image: "/speakers/akguncaglarerdogan.png" 
               },
               { 
                 name: "Dr. Başar Çağlar", 
@@ -231,13 +201,13 @@ export default function Home() {
                 image: "/speakers/candikmen.png" 
               },
               { 
-                name: "Hande Bezici Zeren", 
+                name: "Hande Bezci Zeren", 
                 company: "Ford Otosan", 
                 role: "Araç ve ATS Test Lideri", 
                 image: "/speakers/handebezicizeren.png" 
               },
               { 
-                name: "Büşra Nur Yüceur", 
+                name: "Buşra Nur Yüceur", 
                 company: "Amperino", 
                 role: "Termal Sistem Tasarımı ve CFD Mühendisi", 
                 image: "/speakers/busranuryucenur.png" 
@@ -277,7 +247,7 @@ function EventItem({ time, title, speakers }: EventItemProps) {
           <div className="space-y-2 flex flex-col gap-4">
             {speakers.map((speaker, index) => (
               <div key={index} className="flex items-start space-x-2">
-                <Image className='w-24 h-24 border rounded-lg' src={speaker.image} alt={speaker.name || speaker.company || speaker.role} width={100} height={100} />
+                <Image className='w-24 h-24 border rounded-lg object-cover' src={speaker.image} alt={speaker.name || speaker.company || speaker.role} width={100} height={100} />
                 <div className='flex flex-col gap-2 justify-center items-start'>
                   <span className='font-light'>{speaker.company}</span>
                   <div className='flex flex-col'>
