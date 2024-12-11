@@ -131,12 +131,6 @@ export default function Home() {
                 role: "Denetim Kurulu Başkan Yardımcısı", 
                 image: "/speakers/aysenazakar.jpg" 
               },
-              { 
-                name: "Alper Baba", 
-                company: "İYTE", 
-                role: "Rektör Yardımcısı", 
-                image: "/speakers/alperbaba.png" 
-              }
             ]}
           />
           <EventItem 
